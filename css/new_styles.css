@@ -116,7 +116,7 @@
     justify-content: flex-end;
 
     width: calc(100% + 80px);
-    margin: 25px -40px;
+    margin: 0 -40px;
     padding: 60px 92px;
 
     background: rgba(0, 184, 228, .05);
@@ -126,14 +126,14 @@
 .checkup_info .why .img
 {
     position: absolute;
-    top: -25px;
+    top: 0;
     left: 40px;
 
     display: block;
 
     width: 580px;
     max-width: 100%;
-    height: calc(100% + 50px);
+    height: 100%;
 
     pointer-events: none;
 
@@ -438,6 +438,7 @@
     padding: 0 12px;
 
     cursor: pointer;
+    transition: background .2s linear;
     text-align: center;
     vertical-align: top;
     text-decoration: none;
@@ -454,6 +455,8 @@
 .checkup_info .steps .btn.disabled
 {
     pointer-events: none;
+
+    background: #c7c7c7;
 }
 
 
@@ -497,18 +500,16 @@
     .checkup_info .why .data
     {
         width: calc(100% + 40px);
-        margin: 24px -20px;
+        margin: 0 -20px;
         padding: 48px 20px;
     }
 
 
     .checkup_info .why .img
     {
-        top: -24px;
         left: 0;
 
         width: 480px;
-        height: calc(100% + 48px);
     }
 
 
@@ -564,7 +565,7 @@
 
 
 
-@media print, (max-width: 1024px)
+@media print, (max-width: 1023px)
 {
     /*------------------
         Checkup info
@@ -618,7 +619,6 @@
     .checkup_info .why .img
     {
         position: relative;
-        top: 0;
 
         width: 100%;
         height: auto;
