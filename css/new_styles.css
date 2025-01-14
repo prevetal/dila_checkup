@@ -7,6 +7,7 @@
     flex-direction: column;
 
     margin-top: 12px;
+    padding-bottom: 24px;
 
     gap: 40px;
 }
@@ -164,16 +165,22 @@
 {
     font-size: inherit;
     line-height: inherit;
+
+    margin: 0;
 }
 
 
 .checkup_info .why .info ul li
 {
+    font-size: 24px;
+    line-height: 140%;
+
     position: relative;
 
     display: block;
     overflow: hidden;
 
+    margin: 0;
     padding-left: 32px;
 
     list-style-type: none;
@@ -318,6 +325,8 @@
     bottom: 0;
     left: 2px;
 
+    display: block;
+
     width: 20px;
     height: 20px;
     margin: auto 0;
@@ -404,8 +413,10 @@
 }
 
 
-.checkup_info .steps .age label div
+.checkup_info .steps .age label span
 {
+    display: block;
+
     padding: 6px 9px;
 
     transition: .2s linear;
@@ -415,7 +426,7 @@
 }
 
 
-.checkup_info .steps .age label input:checked + div
+.checkup_info .steps .age label input:checked + span
 {
     color: #fff;
     border-color: #1e88e5;
@@ -518,6 +529,12 @@
         font-size: 20px;
 
         width: calc(100% - 500px);
+    }
+
+
+    .checkup_info .why .info ul li
+    {
+        font-size: 20px;
     }
 
 
